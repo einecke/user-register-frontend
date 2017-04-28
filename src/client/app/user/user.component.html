@@ -1,0 +1,30 @@
+ <p>Angular Seed is a starter project that implements best practices in coding, building and testing Angular apps.</p>
+<table>
+  <thead>
+  <tr>
+    <th data-field="name">Username</th>
+    <th data-field="name">Nome</th>
+    <th data-field="name">Sobrenome</th>
+    <th data-field="name">Editar</th>
+    <th data-field="name">Apagar</th>
+  </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.userId }}</td>
+      <td>{{ user.firstName }}</td>
+      <td>{{ user.lastName }}</td>
+      <td>
+        <a [routerLink]="['/cad', user.userId]">
+          <i class="material-icons">edit</i>
+        </a>
+      </td>
+      <td>
+        <a (click)="deleteUser(user)" >
+           <i class="material-icons">delete</i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>

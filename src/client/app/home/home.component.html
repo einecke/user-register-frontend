@@ -1,0 +1,24 @@
+<div class="valign-wrapper row login-box">
+  <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
+  <span class="card-title">Login</span>
+  <div class="row card-content">
+      <div class="input-field col s12">
+        <input [(ngModel)]="userName" id="usuario" type="text" class="validate">
+        <label class="active" for="usuario">Usuário</label>
+      </div>
+  </div>
+
+  <div class="row card-content">
+      <div class="input-field col s12">
+        <input [(ngModel)]="password" id="senha" type="password" class="validate">
+        <label class="active" for="senha">Senha</label>
+      </div>
+  </div>
+
+  <div class="card-action right-align">
+    <button class="btn waves-effect waves-light"
+        type="submit" name="action" (click)="login()">
+        Login
+      </button>
+  </div>
+</div>

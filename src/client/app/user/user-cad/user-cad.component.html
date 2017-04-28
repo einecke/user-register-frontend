@@ -1,0 +1,35 @@
+<div class="row">
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input [(ngModel)]="user.userId" id="userId" type="text" class="validate">
+        <label class="active" for="userId">Usuário</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input [(ngModel)]="user.firstName" id="firstName" type="text" class="validate">
+        <label class="active" for="firstName">Nome</label>
+      </div>
+      <div class="input-field col s6">
+        <input [(ngModel)]="user.lastName" id="lastName" type="text" class="validate">
+        <label class="active" for="lastName">Sobrenome</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input [(ngModel)]="user.password" id="password" type="password" class="validate">
+        <label class="active" for="password">Senha</label>
+      </div>
+    </div>
+
+
+
+
+    <div class="card-action left-align">
+      <button class="btn waves-effect waves-light" type="submit" name="action" [routerLink]="['/user']" (click)="save()">Cadatrar</button>
+    </div>
+
+</div>
